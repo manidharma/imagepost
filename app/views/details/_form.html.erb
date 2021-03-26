@@ -12,26 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class:"form-control",placeholder:"Full name" %>
   </div>
-
+<br>
   <div class="field">
-    <%= form.label :phone_number %>
-    <%= form.number_field :phone_number %>
+    <%= form.number_field :phone_number, class:"form-control", placeholder:"Enter mobile num" %>
   </div>
-
+<br>
   <div class="field">
-    <%= form.label :occupation %>
-    <%= form.text_field :occupation %>
+    <%= form.text_field :occupation, class:"form-control", placeholder:"Occupation" %>
   </div>
-
+<br>
   <div class="field">
-    <%= form.label :byuser %>
-    <%= form.text_field :byuser %>
+    <%= form.text_field :byuser, value:  current_user.username, type: :hidden %>
   </div>
-
+<br>  
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :submit, class:"btn btn-dark" %>
   </div>
 <% end %>

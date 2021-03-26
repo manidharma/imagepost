@@ -1,5 +1,6 @@
 class DetailsController < InheritedResources::Base
 
+
   private
 
     def detail_params
