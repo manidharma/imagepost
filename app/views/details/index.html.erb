@@ -28,5 +28,13 @@
 <br>
 <%= link_to 'New Detail', new_detail_path %>
 <% else %>
-please login first
+<br>
+<div class="card">
+  <div class="card-header">
+    please login first
+  </div>
+  <div class="card-body">
+    <span> Login as <%= link_to 'Admin', new_admin_user_session_path, class:"btn btn-dark" %> || <%= link_to 'User', new_user_session_path, class:"btn btn-dark" %> </span>
+  </div>
+</div>
 <% end %>
